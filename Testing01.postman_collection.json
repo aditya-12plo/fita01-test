@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "d0f283ea-541a-447a-9c12-9a1ab0760245",
+		"name": "Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2656238"
+	},
+	"item": [
+		{
+			"name": "checkouts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"sku\":\"120P90\",\n        \"qty\":3\n    },\n    {\n        \"sku\":\"43N23P\",\n        \"qty\":1\n    },\n    {\n        \"sku\":\"A304SD\",\n        \"qty\":3\n    },\n    {\n        \"sku\":\"A304SD\",\n        \"qty\":3\n    }\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/checkouts/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checkouts",
+						"data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
